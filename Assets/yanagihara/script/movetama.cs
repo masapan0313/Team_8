@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class delete : MonoBehaviour {
+public class movetama : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -11,6 +11,7 @@ public class delete : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        this.transform.position += new Vector3(0.01f, 0, 0);
+        if (transform.position.x > 300) Destroy(this.gameObject);
 	}
 }

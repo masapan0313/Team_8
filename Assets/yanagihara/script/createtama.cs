@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class delete : MonoBehaviour {
+public class createtama : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
