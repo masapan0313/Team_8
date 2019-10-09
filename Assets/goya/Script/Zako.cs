@@ -13,9 +13,9 @@ public class Zako : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        this.gameObject.transform.Translate(0, 0.05f, 0);
+        this.gameObject.transform.Translate(0, 0.005f, 0);
 
-        if (transform.position.y > 30)
+        if (transform.position.y > 10)
         {
             p = GameObject.Find("GameObject d");
             p.GetComponent<manage>().z = true;

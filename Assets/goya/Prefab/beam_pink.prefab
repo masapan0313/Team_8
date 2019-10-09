@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c1d331f6e7b2e458fdd3edc8ed34ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bamboo: {fileID: 1140412933142954, guid: 9b027b813c9831642ad453a2bb07581e, type: 2}
+  Bamboo: {fileID: 1697607941334914, guid: 8350d6baff0319b4d8901d47aa5d73f3, type: 2}
 --- !u!212 &212529745895093678
 SpriteRenderer:
   m_ObjectHideFlags: 1

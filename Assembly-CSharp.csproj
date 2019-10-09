@@ -61,11 +61,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\goya\Script\debu.cs" />
+    <Compile Include="Assets\goya\Script\hayai.cs" />
+    <Compile Include="Assets\goya\Script\manage.cs" />
     <Compile Include="Assets\goya\Script\Mosion.cs" />
     <Compile Include="Assets\goya\Script\Slashing.cs" />
-    <Compile Include="Assets\Koga\delete.cs" />
+    <Compile Include="Assets\goya\Script\Zako.cs" />
     <Compile Include="Assets\MoveBamboo.cs" />
-    <Compile Include="Assets\Scenes\DeleteScript.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/GameCamp/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

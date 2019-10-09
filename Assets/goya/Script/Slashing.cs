@@ -10,7 +10,8 @@ public class Slashing : MonoBehaviour {
 
     void Start () {
         acceleration = 0;
-        test = Bamboo;
+        //test = new GameObject();
+          // test = Bamboo;
     }
 	
 	void Update () {
@@ -22,24 +23,27 @@ public class Slashing : MonoBehaviour {
         }
     }
 
-    void OnCollisionEnter2D(Collision2D Target)
+    void OnCollisionEnter2D(Collision2D Tube , Collision2D Section)//Tube=硬いところ Section=節
     {
+        Debug.Log("aaa");
         //if (Target.gameObject.name == "line_bamboo_take" || Target.gameObject.name == "Cube")
         //{
         //    Destroy(Target.gameObject);
         //    Destroy(this.gameObject);
         //}
+        //test = Target.gameObject.transform.root.gameObject;
 
-        if (Target.gameObject.tag == "Tube")
+        if (Section.gameObject.tag == "Section")
+        {
+            GameObject.Destroy(test.gameObject);
+            //Destroy(this.gameObject);
+            
+            Debug.Log("sss");
+        }
+        if (Tube.gameObject.tag == "Tube")
         {
             Destroy(test.gameObject);
             Destroy(this.gameObject);
-            Debug.Log("sss");
-        }
-        if (Target.gameObject.tag == "Section")
-        {
-            //Destroy(test.gameObject);
-            //Destroy(this.gameObject);
             Debug.Log("aaa");
         }
     }
