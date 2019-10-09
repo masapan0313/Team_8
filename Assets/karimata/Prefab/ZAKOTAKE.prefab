@@ -73,7 +73,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4140557443273738}
-  - component: {fileID: 114879754368438252}
   m_Layer: 0
   m_Name: zako (3)
   m_TagString: Untagged
@@ -143,7 +142,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4461015486201788}
-  - component: {fileID: 114588093988119914}
   m_Layer: 0
   m_Name: zako (2)
   m_TagString: Untagged
@@ -303,9 +301,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4961218237138036}
+  - component: {fileID: 114067963634855652}
   m_Layer: 0
   m_Name: ZAKOTAKE
-  m_TagString: Untagged
+  m_TagString: zako
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -372,7 +371,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4304292642570904}
-  - component: {fileID: 114713721563129152}
   m_Layer: 0
   m_Name: zako (1)
   m_TagString: Untagged
@@ -683,7 +681,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1697607941334914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.471164, y: -5.54, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4304292642570904}
@@ -1911,39 +1909,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.013113575, y: 49607.125}
   m_EdgeRadius: 0
---- !u!114 &114588093988119914
+--- !u!114 &114067963634855652
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1249984842588038}
+  m_GameObject: {fileID: 1697607941334914}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 330c3bfa4965a474abdbf132a1f6d4d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: {fileID: 0}
---- !u!114 &114713721563129152
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1987547592912354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 330c3bfa4965a474abdbf132a1f6d4d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  p: {fileID: 0}
---- !u!114 &114879754368438252
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1109378862391946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 330c3bfa4965a474abdbf132a1f6d4d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  p: {fileID: 0}
+  p: {fileID: 1744768027120308, guid: 71e56b1313753bb478fd8bdc995ebdbb, type: 2}

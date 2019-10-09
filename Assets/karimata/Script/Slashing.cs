@@ -8,10 +8,13 @@ public class Slashing : MonoBehaviour {
     float acceleration; // 斬撃の加速度
     GameObject test;
 
+    GameObject takeM;
+
     void Start () {
         acceleration = 0;
         //test = new GameObject();
-          // test = Bamboo;
+        // test = Bamboo;
+        takeM = GameObject.Find("GameObject d");
     }
 	
 	void Update () {
@@ -23,7 +26,7 @@ public class Slashing : MonoBehaviour {
         }
     }
 
-    void OnCollisionEnter2D(Collision2D Tube , Collision2D Section)//Tube=硬いところ Section=節
+    void OnCollisionEnter2D(Collision2D Target)//Tube=硬いところ Section=節
     {
         Debug.Log("aaa");
         //if (Target.gameObject.name == "line_bamboo_take" || Target.gameObject.name == "Cube")
@@ -31,19 +34,26 @@ public class Slashing : MonoBehaviour {
         //    Destroy(Target.gameObject);
         //    Destroy(this.gameObject);
         //}
-        //test = Target.gameObject.transform.root.gameObject;
+        test = Target.gameObject.transform.root.gameObject;
 
-        if (Section.gameObject.tag == "Section")
+        if (Target.gameObject.tag == "Section")
         {
             GameObject.Destroy(test.gameObject);
             //Destroy(this.gameObject);
-            
+            if(Target.gameObject.transform.root.gameObject.tag == "zako")
+            takeM.GetComponent<manage>().z = true;
+           
+
+
             Debug.Log("sss");
         }
-        if (Tube.gameObject.tag == "Tube")
+        if (Target.gameObject.tag == "Tube")
         {
             Destroy(test.gameObject);
+            if (Target.gameObject.transform.root.gameObject.tag == "zako")
+                takeM.GetComponent<manage>().z = true;
             Destroy(this.gameObject);
+            
             Debug.Log("aaa");
         }
     }
