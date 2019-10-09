@@ -312,6 +312,54 @@ MonoBehaviour:
   Normal: {fileID: 1961790539}
   Attack: {fileID: 649094877}
   Target: {fileID: 1882827614}
+  slashing: {fileID: 1375763011747100, guid: b17fd07cf16df384091f4247f1c07beb, type: 2}
+--- !u!1001 &1086574568
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4586777387032356, guid: 9b027b813c9831642ad453a2bb07581e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.4711637
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586777387032356, guid: 9b027b813c9831642ad453a2bb07581e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -5.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586777387032356, guid: 9b027b813c9831642ad453a2bb07581e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5.6328125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586777387032356, guid: 9b027b813c9831642ad453a2bb07581e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586777387032356, guid: 9b027b813c9831642ad453a2bb07581e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586777387032356, guid: 9b027b813c9831642ad453a2bb07581e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586777387032356, guid: 9b027b813c9831642ad453a2bb07581e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586777387032356, guid: 9b027b813c9831642ad453a2bb07581e, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 61866553077848934, guid: 9b027b813c9831642ad453a2bb07581e,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9b027b813c9831642ad453a2bb07581e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1642670154
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,9 +508,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1882827616}
   - component: {fileID: 1882827615}
+  - component: {fileID: 1882827617}
   m_Layer: 0
   m_Name: line_bamboo_take
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -519,12 +568,37 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1882827614}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 6.4736314, y: 0.3014567, z: 0}
+  m_LocalPosition: {x: 6.4736314, y: -6.33, z: 0}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!61 &1882827617
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1882827614}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6, y: 0.39}
+    newSize: {x: 6, y: 0.39}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6, y: 0.39}
+  m_EdgeRadius: 0
 --- !u!1 &1961790539
 GameObject:
   m_ObjectHideFlags: 0

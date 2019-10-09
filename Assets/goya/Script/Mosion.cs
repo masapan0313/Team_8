@@ -12,25 +12,34 @@ public class Mosion : MonoBehaviour {
     private GameObject Target;
     bool Cooltime;  //攻撃できるかの状態（TRUE：できる、FALSE：できない）
 
+    bool slashingflg;
+    public GameObject slashing;
+
     void Start () {
         Cooltime = true;
+        slashingflg = true;
 
-	}
+    }
 	
 	void Update () {
         if (Input.GetKey("space"))
         {
             Attack.transform.position = new Vector3(0, 0, 0);
+            Vector3 pointer = Attack.GetComponentInChildren<Transform>().transform.position;
             Normal.transform.position = new Vector3(0, 10, 0);
 
             //Destroy(Target);
-            GameObject obj = (GameObject)Resources.Load("beam_pink");
-            Instantiate(obj, new Vector3(0.0f, 2.0f, 0.0f), Quaternion.identity);
+            if (slashingflg == true)
+            {
+                Instantiate(slashing, pointer, Quaternion.identity);
+                slashingflg = false;
+            }
         }
         else
         {
             Normal.transform.position = new Vector3(0, 0, 0);
             Attack.transform.position = new Vector3(0, 10, 0);
+            slashingflg = true;
         }
     }
 }
