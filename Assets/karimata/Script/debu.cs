@@ -3,24 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class debu : MonoBehaviour {
-    public GameObject p;
-    void start()
+   
+    private float speed;
+    void Start()
     {
-
+        speed = Random.Range(0.05f, 0.08f);
     }
     void Update()
     {
-
-        this.gameObject.transform.Translate(0, 0.05f, 0);
-
-        if (transform.position.y > 30)
-        {
-            p = GameObject.Find("GameObject d");
-            p.GetComponent<manage>().d = true;
-            Destroy(gameObject);
-
-        }
-
+        this.gameObject.transform.Translate(0, speed, 0);
+        
     }
 
 

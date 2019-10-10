@@ -14,16 +14,30 @@ public class Mosion : MonoBehaviour {
 
     bool slashingflg;
     public GameObject slashing;
+    public GameObject director;
+    float waitTime;
+    bool waitflg;
 
     void Start () {
         Cooltime = true;
         slashingflg = true;
-
+        waitflg = false;
     }
 	
 	void Update () {
-        if (Input.GetKey("space"))
+
+        if (waitflg == true)
         {
+            waitTime += Time.deltaTime;
+            if (waitTime > 1f)
+            {
+                waitflg = false;
+                waitTime = 0;
+            }
+        }
+        if (waitflg == false &&  Input.GetKey("space"))
+        {
+            waitflg = true;
             Attack.transform.position = new Vector3(-7, -2.5f, 0);
             Vector3 pointer = Attack.GetComponentInChildren<Transform>().transform.position;
             Normal.transform.position = new Vector3(0, 50, 0);

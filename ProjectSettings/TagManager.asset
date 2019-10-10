@@ -9,6 +9,8 @@ TagManager:
   - ' Section'
   - zako
   - Section
+  - debu
+  - boss
   layers:
   - Default
   - TransparentFX

@@ -81,9 +81,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c1d331f6e7b2e458fdd3edc8ed34ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bamboo: {fileID: 1024915184574894, guid: c944662b44a654644b5c7051d34f184f, type: 2}
   bashu: {fileID: 1603845900494264, guid: dade2247731027a4f8661a9d79fe0b09, type: 2}
-  dokan: {fileID: 0}
+  dokan: {fileID: 1911979095268030, guid: d4cc4628d09922c468b90729e02e6242, type: 2}
 --- !u!212 &212207248025213476
 SpriteRenderer:
   m_ObjectHideFlags: 1

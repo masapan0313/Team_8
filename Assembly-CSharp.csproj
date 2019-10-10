@@ -65,6 +65,7 @@
     <Compile Include="Assets\karimata\gauge.cs" />
     <Compile Include="Assets\karimata\LifeGauge.cs" />
     <Compile Include="Assets\karimata\PlayerController1.cs" />
+    <Compile Include="Assets\karimata\Script\Boss.cs" />
     <Compile Include="Assets\karimata\Script\debu.cs" />
     <Compile Include="Assets\karimata\Script\Director.cs" />
     <Compile Include="Assets\karimata\Script\hayai.cs" />
@@ -74,11 +75,11 @@
     <Compile Include="Assets\karimata\Script\Slashing.cs" />
     <Compile Include="Assets\karimata\Script\Zako.cs" />
     <Compile Include="Assets\MoveBamboo.cs" />
-    <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/inali/Desktop/gameC8/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>C:/Users/inali/Desktop/gameC8/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>C:/Users/inali/Desktop/gameC8/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -54,15 +54,17 @@ MonoBehaviour:
   d: 0
   z: 0
   h: 0
-  debu: {fileID: 1319660779588194, guid: fbf65951f66b7a74ebcf80e4de920d06, type: 2}
+  debu: {fileID: 1743990199023494, guid: c3d5645a2083a9a4d8a18c529079e0f5, type: 2}
   Zako: {fileID: 1117302269077060, guid: 1b8bd6eaf26bcbe44be800f0a7f3f28f, type: 2}
   point: {fileID: 1744768027120308}
-  hayai: {fileID: 1898236442159056, guid: a7e055c7a101ab341a4bd16d23f9b30a, type: 2}
+  boss: {fileID: 1380674673548360, guid: 8d526e9a2975eaf428cb0ca903364409, type: 2}
   points: {fileID: 1744768027120308}
   zako:
   - {fileID: 1117302269077060, guid: 1b8bd6eaf26bcbe44be800f0a7f3f28f, type: 2}
+  - {fileID: 1743990199023494, guid: c3d5645a2083a9a4d8a18c529079e0f5, type: 2}
+  - {fileID: 1229990244019610, guid: 3530cf63638d7f146b858625c5d29084, type: 2}
   GeneratPoint:
   - {x: 2, y: -5, z: 0}
   - {x: 4, y: -5, z: 0}
   - {x: 6, y: -5, z: 0}
-  moveFlg: 0
+  killcount: 0

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Zako : MonoBehaviour {
-    public GameObject p;
+    
 
     private float speed;
     // Use this for initialization
@@ -16,12 +16,5 @@ public class Zako : MonoBehaviour {
     void Update()
     {
         this.gameObject.transform.Translate(0,speed, 0);
-
-        //if (transform.position.y > 10)
-        //{
-        //    p = GameObject.Find("GameObject d");
-        //    p.GetComponent<manage>().z = true;
-        //    Destroy(gameObject);
-        //}
     }
 }

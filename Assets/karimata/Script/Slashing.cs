@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Slashing : MonoBehaviour {
-    [SerializeField, Header("竹")]
-    private GameObject Bamboo; // 竹に当たると斬撃が消える
+    //[SerializeField, Header("竹")]
+    //private GameObject Bamboo; // 竹に当たると斬撃が消える
     float acceleration; // 斬撃の加速度
     GameObject test;
 
@@ -42,11 +42,15 @@ public class Slashing : MonoBehaviour {
         if (Target.gameObject.tag == "Section")
         {
             GameObject Box = Instantiate(dokan, new Vector3(Target.transform.position.x, this.transform.position.y + 1f), Quaternion.identity);
-            GameObject.Destroy(test.gameObject);
+            
             //Destroy(this.gameObject);
-            if(Target.gameObject.transform.root.gameObject.tag == "zako")
-            takeM.GetComponent<manage>().z = true;
-            takeM.GetComponent<manage>().moveFlg = true;
+            if (Target.gameObject.transform.root.gameObject.tag == "zako" || Target.gameObject.transform.root.gameObject.tag == "debu")
+            {
+                GameObject.Destroy(test.gameObject);
+                takeM.GetComponent<manage>().z = true;
+                takeM.GetComponent<manage>().killcount++;
+            }
+            
 
             Debug.Log("節");
 
@@ -54,13 +58,31 @@ public class Slashing : MonoBehaviour {
         if (Target.gameObject.tag == "Tube")
         {
             GameObject Box  = Instantiate(bashu,new Vector3(Target.transform.position.x,this.transform.position.y + 1f),Quaternion.identity);
-            Destroy(test.gameObject);
+            
             if (Target.gameObject.transform.root.gameObject.tag == "zako")
+            {
+                Destroy(test.gameObject);
                 takeM.GetComponent<manage>().z = true;
+                takeM.GetComponent<manage>().killcount++;
+
+            }
+            
+
             Destroy(this.gameObject);
             
             Debug.Log("硬い");
         }
+
+        if (Target.gameObject.tag == "boss")
+        {
+            GameObject Box = Instantiate(dokan, new Vector3(Target.transform.position.x, this.transform.position.y + 1f), Quaternion.identity);
+            
+            Destroy(test.gameObject);
+             
+            Destroy(this.gameObject);
+            
+        }
+
     }
     
 }
