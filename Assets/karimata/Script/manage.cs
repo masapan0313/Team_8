@@ -17,79 +17,92 @@ public class manage : MonoBehaviour
     public Vector3[] GeneratPoint;
     GameObject[] teki = new GameObject[3];
     bool flg ;
+
+    public bool moveFlg;
     void Start()
     {
         flg = true;
-        Debug.Log("11");
+        moveFlg = false;
+        //Debug.Log("11");
     }
 
     // Update is called once per frame
     void Update()
     {
         
-        if(flg == true)
+        if (flg == true)
         {
-            Debug.Log("12");
+            //Debug.Log("12");
             
 
             for (int i = 0; i < 3; i++)
             {
-                Debug.Log("ok");
+                //Debug.Log("ok");
                 teki[i] = GameObject.Instantiate(zako[0], GeneratPoint[i], Quaternion.identity);
             }
             flg = false;
         }
-        tekides();
-        if (d == true)
-        {
-            GameObject o;
-            o = GameObject.Instantiate(debu, this.transform);
-            d = false;
 
-        }
+
+        Tekides();
+
+
+        //if (d == true)
+        //{
+        //    GameObject o;
+        //    o = GameObject.Instantiate(debu, this.transform);
+        //    d = false;
+
+        //}
+
+
         if (z == true)
         {
             
-            for(int i=0; i < 3; i++)
+
+            for (int i = 0; i < 3; i++)
             {
-                if(teki[i] == null)
+                if (teki[i] == null)
                 {
                     teki[i] = GameObject.Instantiate(Zako, GeneratPoint[i], Quaternion.identity);
-                    z = false;
-                    break;
                 }
             }
-            
-            
+
+            z = false;
+
         }
-        if (h == true)
-        {
-            GameObject r ;
-            r = GameObject.Instantiate(hayai, points.transform);
-            h = false;
-        }
+
+
+        //if (h == true)
+        //{
+        //    GameObject r ;
+        //    r = GameObject.Instantiate(hayai, points.transform);
+        //    h = false;
+        //}
 
     }
 
-    void tekides()
+    void Tekides()
     {
-        if(teki[0] != null && teki[0].transform.position.y > 10f)
+        if(teki[0] != null && teki[0].transform.position.y > 5f)
         {
             teki[0].transform.position = GeneratPoint[0];
             Destroy(teki[0].gameObject);
-            z = true;
+            z = false;
         }
-        if (teki[1] != null && teki[1].transform.position.y > 10f)
+        if (teki[1] != null && teki[1].transform.position.y > 5f)
         {
             teki[1].transform.position = GeneratPoint[1];
             Destroy(teki[1].gameObject);
-            z = true;
+            z = false;
+
         }
-        if (teki[2] != null && teki[2].transform.position.y > 10f)
+        if (teki[2] != null && teki[2].transform.position.y > 5f)
         {
             teki[2].transform.position = GeneratPoint[2]; 
             Destroy(teki[2].gameObject);
-            z = true;
+            z = false;
+
         }
 
 

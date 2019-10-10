@@ -8,6 +8,7 @@ TagManager:
   - Tube
   - ' Section'
   - zako
+  - Section
   layers:
   - Default
   - TransparentFX

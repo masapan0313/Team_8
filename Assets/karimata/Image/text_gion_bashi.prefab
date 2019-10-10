@@ -9,87 +9,55 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1636163702601634}
+  m_RootGameObject: {fileID: 1603845900494264}
   m_IsPrefabParent: 1
---- !u!1 &1636163702601634
+--- !u!1 &1603845900494264
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4245275305020410}
-  - component: {fileID: 212058554158660742}
-  - component: {fileID: 114808485117655502}
-  - component: {fileID: 65126103803425200}
-  - component: {fileID: 54626480620486004}
+  - component: {fileID: 4123168659561028}
+  - component: {fileID: 212947069975300184}
+  - component: {fileID: 114887328250683294}
   m_Layer: 0
-  m_Name: beam_pink
-  m_TagString: Respawn
+  m_Name: text_gion_bashi
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4245275305020410
+--- !u!4 &4123168659561028
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1636163702601634}
+  m_GameObject: {fileID: 1603845900494264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: -0.3302765, z: -5.8650265}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &54626480620486004
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1636163702601634}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &65126103803425200
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1636163702601634}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.9038315, y: 0.04908681, z: 0.028161049}
-  m_Center: {x: -0.013929367, y: 0.010284066, z: 0.0050930977}
---- !u!114 &114808485117655502
+--- !u!114 &114887328250683294
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1636163702601634}
+  m_GameObject: {fileID: 1603845900494264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17c1d331f6e7b2e458fdd3edc8ed34ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 699b045a81a3e644f9ce6843e1420ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bamboo: {fileID: 1024915184574894, guid: c944662b44a654644b5c7051d34f184f, type: 2}
-  bashu: {fileID: 1603845900494264, guid: dade2247731027a4f8661a9d79fe0b09, type: 2}
-  dokan: {fileID: 1911979095268030, guid: d4cc4628d09922c468b90729e02e6242, type: 2}
---- !u!212 &212058554158660742
+--- !u!212 &212947069975300184
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1636163702601634}
+  m_GameObject: {fileID: 1603845900494264}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -118,13 +86,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 966efbb702b1a7646bf6643705b8338a, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 45f39cbb646a7b344b5e3e8395c9c688, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5, y: 0.53}
+  m_Size: {x: 6, y: 2.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

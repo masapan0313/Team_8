@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class Zako : MonoBehaviour {
     public GameObject p;
+
+    private float speed;
     // Use this for initialization
     void Start()
     {
-
+        speed = Random.Range(0.05f, 0.15f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        this.gameObject.transform.Translate(0, 0.05f, 0);
+        this.gameObject.transform.Translate(0,speed, 0);
 
         //if (transform.position.y > 10)
         //{

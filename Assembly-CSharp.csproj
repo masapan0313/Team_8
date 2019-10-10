@@ -68,6 +68,7 @@
     <Compile Include="Assets\karimata\Script\debu.cs" />
     <Compile Include="Assets\karimata\Script\Director.cs" />
     <Compile Include="Assets\karimata\Script\hayai.cs" />
+    <Compile Include="Assets\karimata\Script\ImageDestroy.cs" />
     <Compile Include="Assets\karimata\Script\manage.cs" />
     <Compile Include="Assets\karimata\Script\Mosion.cs" />
     <Compile Include="Assets\karimata\Script\Slashing.cs" />

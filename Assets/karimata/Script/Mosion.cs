@@ -24,9 +24,9 @@ public class Mosion : MonoBehaviour {
 	void Update () {
         if (Input.GetKey("space"))
         {
-            Attack.transform.position = new Vector3(0, 0, 0);
+            Attack.transform.position = new Vector3(-7, -2.5f, 0);
             Vector3 pointer = Attack.GetComponentInChildren<Transform>().transform.position;
-            Normal.transform.position = new Vector3(0, 10, 0);
+            Normal.transform.position = new Vector3(0, 50, 0);
 
             //Destroy(Target);
             if (slashingflg == true)
@@ -37,8 +37,8 @@ public class Mosion : MonoBehaviour {
         }
         else
         {
-            Normal.transform.position = new Vector3(0, 0, 0);
-            Attack.transform.position = new Vector3(0, 10, 0);
+            Normal.transform.position = new Vector3(-7, -2.5f, 0);
+            Attack.transform.position = new Vector3(0, -50, 0);
             slashingflg = true;
         }
     }
